@@ -30,6 +30,7 @@ def generateArticle(title, tweet_uri, image_path):
 	# text = '## [' + basename + '](' + tweet_uri + ')\n'
 	text = '## ' + basename + ')\n'
 	text += '![](' + image_path + ')' + '\n'
+	text += '\n'
 	text += 'cite: [' + tweet_uri + '](' + tweet_uri + ')\n'
 	text += '\n'
 	return text
