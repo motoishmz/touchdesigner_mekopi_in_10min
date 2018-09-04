@@ -19,7 +19,7 @@ assert(os.path.exists(sys.argv[1]))
 INPUT_MOV_FILENAME = sys.argv[1]
 
 OUTPUT_GIF_FILENAME = sys.argv[2]
-SCALE = sys.argv[3]
+SCALE = float(sys.argv[3])
 
 clip = (VideoFileClip(INPUT_MOV_FILENAME)
         .resize(SCALE))
