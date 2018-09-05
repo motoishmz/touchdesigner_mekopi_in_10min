@@ -9,8 +9,7 @@ from moviepy.editor import *
 
 def generateGif(src, dst, scale):
 	try:
-		clip = (VideoFileClip(src)
-					.resize(scale))
+		clip = (VideoFileClip(src).resize(scale))
 		clip.write_gif(dst)
 		print('[gif file generated]', dst)
 		pass
